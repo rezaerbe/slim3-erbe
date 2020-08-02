@@ -37,6 +37,10 @@ $container['auth'] = function ($container) {
     return new \App\Auth\Auth;
 };
 
+$container['flash'] = function ($container) {
+    return new \SLim\Flash\Messages;
+};
+
 $container['view'] = function ($container) {
 
     $view = new \Slim\Views\Twig(__DIR__ . '/../resources/views', [
