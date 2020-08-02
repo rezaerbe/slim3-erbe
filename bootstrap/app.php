@@ -38,7 +38,7 @@ $container['auth'] = function ($container) {
 };
 
 $container['flash'] = function ($container) {
-    return new \SLim\Flash\Messages;
+    return new \Slim\Flash\Messages;
 };
 
 $container['view'] = function ($container) {
